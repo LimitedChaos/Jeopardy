@@ -27,7 +27,7 @@
     async function loadData(force = false) {
         try {
             STATUS.textContent = 'Loading…';
-            const res = await fetch('./Data/questions.json' + (force ? `?t=${Date.now()}` : ''));
+            const res = await fetch('https://limitedchaos.github.io/Questions/Gilmore-Questions' + (force ? `?t=${Date.now()}` : ''));
             if (!res.ok) throw new Error(`Failed to load questions.json (${res.status})`);
             data = await res.json();
             TITLE.textContent = data.title || 'Jeopardy!';
