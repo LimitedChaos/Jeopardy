@@ -1,0 +1,155 @@
+{
+  "title": "Gilmore Girls Jeopardy!",
+  "categories": [
+    {
+      "name": "Stars Hollow",
+      "clues": [
+        {
+          "value": 200,
+          "question": "What is the name of the town where Lorelai and Rory live?",
+          "answer": "Stars Hollow"
+        },
+        {
+          "value": 400,
+          "question": "Who is the town�s busybody and market owner?",
+          "answer": "Taylor Doose"
+        },
+        {
+          "value": 600,
+          "question": "What annual event has couples dancing for 24 hours?",
+          "answer": "The Dance Marathon"
+        },
+        {
+          "value": 800,
+          "question": "Who runs the town�s dance studio?",
+          "answer": "Miss Patty"
+        },
+        {
+          "value": 1000,
+          "question": "What�s the name of the town troubadour who sings on the streets?",
+          "answer": "Grant Lee Phillips"
+        }
+      ]
+    },
+    {
+      "name": "Rory�s World",
+      "clues": [
+        {
+          "value": 200,
+          "question": "What private school does Rory attend before Yale?",
+          "answer": "Chilton"
+        },
+        {
+          "value": 400,
+          "question": "What university does Rory attend?",
+          "answer": "Yale"
+        },
+        {
+          "value": 600,
+          "question": "Who is Rory�s first boyfriend?",
+          "answer": "Dean Forester"
+        },
+        {
+          "value": 800,
+          "question": "What secret society does Rory join at Yale?",
+          "answer": "The Life and Death Brigade"
+        },
+        {
+          "value": 1000,
+          "question": "What is Rory�s dream profession?",
+          "answer": "Journalist"
+        }
+      ]
+    },
+    {
+      "name": "Lorelai�s Life",
+      "clues": [
+        {
+          "value": 200,
+          "question": "Who is Lorelai�s best friend and business partner?",
+          "answer": "Sookie St. James"
+        },
+        {
+          "value": 400,
+          "question": "What inn do Lorelai and Sookie eventually own?",
+          "answer": "The Dragonfly Inn"
+        },
+        {
+          "value": 600,
+          "question": "Who is Lorelai�s ex-fianc� and Rory�s father?",
+          "answer": "Christopher Hayden"
+        },
+        {
+          "value": 800,
+          "question": "Who is Lorelai engaged to in Season 5?",
+          "answer": "Luke Danes"
+        },
+        {
+          "value": 1000,
+          "question": "What was the name of Lorelai�s dog?",
+          "answer": "Paul Anka"
+        }
+      ]
+    },
+    {
+      "name": "Food & Coffee",
+      "clues": [
+        {
+          "value": 200,
+          "question": "Where do Lorelai and Rory get most of their coffee?",
+          "answer": "Luke�s Diner"
+        },
+        {
+          "value": 400,
+          "question": "What food is Sookie famous for making?",
+          "answer": "Her gourmet meals and baked goods"
+        },
+        {
+          "value": 600,
+          "question": "What�s Lorelai�s favorite beverage?",
+          "answer": "Coffee"
+        },
+        {
+          "value": 800,
+          "question": "What food festival is held annually in Stars Hollow?",
+          "answer": "The Firelight Festival"
+        },
+        {
+          "value": 1000,
+          "question": "What food does Lorelai order for her daughter�s birthday every year?",
+          "answer": "A huge spread of takeout junk food"
+        }
+      ]
+    },
+    {
+      "name": "Quotes & Pop Culture",
+      "clues": [
+        {
+          "value": 200,
+          "question": "Finish Lorelai�s line: 'I can�t stop drinking the coffee. I stop drinking the coffee, I stop doing the standing, and the walking, and the�'",
+          "answer": "�the words putting into sentence doing."
+        },
+        {
+          "value": 400,
+          "question": "What band does Lane play drums for?",
+          "answer": "Hep Alien"
+        },
+        {
+          "value": 600,
+          "question": "What movie do Lorelai and Rory watch every year on Rory�s birthday?",
+          "answer": "Pippi Longstocking"
+        },
+        {
+          "value": 800,
+          "question": "What is Rory�s Yale roommate�s name?",
+          "answer": "Paris Geller"
+        },
+        {
+          "value": 1000,
+          "question": "What phrase does the Life and Death Brigade shout before stunts?",
+          "answer": "In omnia paratus!"
+        }
+      ]
+    }
+  ]
+}

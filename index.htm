@@ -1,1 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Gilmore Girls Jeopardy</title>
+    <link rel="stylesheet" href="./Style/style.css" />
+</head>
+<body>
+    <header class="game-header">
+        <h1 id="game-title">Gilmore Girls Jeopardy!</h1>
+        <div class="controls">
+            <button id="reload">Reload board</button>
+            <span id="status" aria-live="polite"></span>
+        </div>
+    </header>
+
+    <main class="board" id="board" aria-label="Jeopardy board"></main>
+
+    <div class="modal" id="modal" aria-hidden="true" role="dialog" aria-labelledby="modal-category">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 id="modal-category"></h2>
+                <span id="modal-value"></span>
+            </div>
+            <div class="modal-body">
+                <p id="modal-text"></p>
+            </div>
+            <div class="modal-actions">
+                <button id="show-answer">Show answer</button>
+                <button id="close-modal">Close</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="./Scripts/jeopardy.js" defer></script>
+</body>
+</html>
+
 
