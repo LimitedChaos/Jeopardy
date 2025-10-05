@@ -1,40 +1,44 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Gilmore Girls Jeopardy</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jeopardy Game</title>
     <link rel="stylesheet" href="./Style/style.css" />
 </head>
 <body>
-    <header class="game-header">
-        <h1 id="game-title">Gilmore Girls Jeopardy!</h1>
-        <div class="controls">
-            <button id="reload">Reload board</button>
-            <span id="status" aria-live="polite"></span>
+    <h1>JEOPARDY!</h1>
+    <div class="round-indicator" id="roundIndicator">Round 1</div>
+
+    <div class="navigation">
+        <button id="round1Btn" onclick="loadRound(0)">Round 1</button>
+        <button id="round2Btn" onclick="loadRound(1)">Round 2</button>
+        <button id="finalBtn" onclick="showFinalJeopardy()">Final Jeopardy</button>
+    </div>
+
+    <div class="board" id="gameBoard"></div>
+
+    <div class="final-jeopardy" id="finalJeopardy">
+        <div class="final-category" id="finalCategory"></div>
+        <div class="final-clue" id="finalClue"></div>
+        <div class="answer" id="finalAnswer"></div>
+        <div class="buttons">
+            <button onclick="document.getElementById('finalAnswer').style.display='block'">Show Answer</button>
+            <button onclick="location.reload()">Play Again</button>
         </div>
-    </header>
+    </div>
 
-    <main class="board" id="board" aria-label="Jeopardy board"></main>
-
-    <div class="modal" id="modal" aria-hidden="true" role="dialog" aria-labelledby="modal-category">
+    <div class="modal" id="modal">
         <div class="modal-content">
-            <div class="modal-header">
-                <h2 id="modal-category"></h2>
-                <span id="modal-value"></span>
-            </div>
-            <div class="modal-body">
-                <p id="modal-text"></p>
-            </div>
-            <div class="modal-actions">
-                <button id="show-answer">Show answer</button>
-                <button id="close-modal">Close</button>
+            <div class="question" id="modalQuestion"></div>
+            <div class="answer" id="modalAnswer"></div>
+            <div class="buttons">
+                <button onclick="showAnswer()">Show Answer</button>
+                <button onclick="closeModal()">Close</button>
             </div>
         </div>
     </div>
 
-    <script src="./Scripts/jeopardy.js" defer></script>
+    <script src="./Scripts/jeopardy.js"></script>
 </body>
 </html>
-
-
