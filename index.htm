@@ -1,41 +1,33 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jeopardy Game</title>
-    <link rel="stylesheet" href="./Style/style.css" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Jeopardy Board</title>
+    <link rel="stylesheet" href="./Style/style.css">
 </head>
 <body>
-    <h1>JEOPARDY!</h1>
-    <div class="round-indicator" id="roundIndicator">Round 1</div>
-
-    <div class="navigation">
-        <button id="round1Btn" onclick="loadRound(0)">Round 1</button>
-        <button id="round2Btn" onclick="loadRound(1)">Round 2</button>
-        <button id="finalBtn" onclick="showFinalJeopardy()">Final Jeopardy</button>
-    </div>
-
-    <div class="board" id="gameBoard"></div>
-
-    <div class="final-jeopardy" id="finalJeopardy">
-        <div class="final-category" id="finalCategory"></div>
-        <div class="final-clue" id="finalClue"></div>
-        <div class="answer" id="finalAnswer"></div>
-        <div class="buttons">
-            <button onclick="document.getElementById('finalAnswer').style.display='block'">Show Answer</button>
-            <button onclick="location.reload()">Play Again</button>
+    <header class="top">
+        <h1>Jeopardy</h1>
+        <div class="controls">
+            <button id="round1" class="round-btn active">Round 1</button>
+            <button id="round2" class="round-btn">Round 2</button>
+            <button id="reset" class="reset-btn">Reset Used</button>
+            <!-- Final Jeopardy button kept separate below -->
+            <button id="finalBtn" class="round-btn">Final Jeopardy</button>
         </div>
-    </div>
+    </header>
 
-    <div class="modal" id="modal">
-        <div class="modal-content">
-            <div class="question" id="modalQuestion"></div>
-            <div class="answer" id="modalAnswer"></div>
-            <div class="buttons">
-                <button onclick="showAnswer()">Show Answer</button>
-                <button onclick="closeModal()">Close</button>
-            </div>
+    <main id="board" class="board"></main>
+
+    <div id="modal" class="modal hidden" aria-hidden="true">
+        <div class="modal-content" role="dialog" aria-modal="true">
+            <button id="closeModal" class="close">×</button>
+            <h2 id="modalCategory"></h2>
+            <div id="modalValue" class="modal-value"></div>
+            <div id="modalQuestion" class="modal-question"></div>
+            <button id="showAnswer" class="answer-btn">Show Answer</button>
+            <div id="modalAnswer" class="modal-answer hidden"></div>
         </div>
     </div>
 
